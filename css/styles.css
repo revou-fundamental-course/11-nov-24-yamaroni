@@ -12,6 +12,7 @@
 
 .container-banner {
     flex: 1;
+    margin-right: 32px;
 }
 
 .main-logo {
@@ -45,9 +46,20 @@ main {
 
 .banner-autoslide {
     height: 250px;
-    background-image: url(https://picsum.photos/500);
     background-position: center;
     background-size: cover;
+}
+
+.image1 {
+    background-image: url(https://picsum.photos/500);
+}
+
+.image2 {
+    background-image: url(https://picsum.photos/600);
+}
+
+.image3 {
+    background-image: url(https://picsum.photos/700);
 }
 
 .our-package-header {
@@ -60,4 +72,16 @@ main {
 
 footer {
     text-align: center;
+}
+
+/* Responsive */
+@media only screen and (max-width: 480px) {
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-logo {
+        margin-bottom: 16px;
+    }
 }

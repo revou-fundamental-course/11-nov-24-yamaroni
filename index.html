@@ -31,14 +31,21 @@
         <article class="main-article">
             <!-- Konten Banner Autoslide -->
             <section class="container-banner">
-                <div class="banner-autoslide"></div>
+                <div class="banner-autoslide image1"></div>
+                <div class="banner-autoslide image2"></div>
+                <div class="banner-autoslide image3"></div>
 
                 <p>Lorem Ipsum Dolor Sit Amet Adipiscing...</p>
             </section>
 
             <!-- Form Contact Us -->
             <section>
-                <h2>Form Contact Us</h2>
+                <form>
+                    <label for="username-input">Username: </label>
+                    <input id="username-input" required />
+
+                    <button type="button" onclick="nextSlide()">Submit</button>
+                </form>
             </section>
         </article>
 
@@ -57,6 +64,8 @@
     <footer>
         <span>Made by Yama@2024</span>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
